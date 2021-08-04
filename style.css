@@ -1,0 +1,195 @@
+/* RESET CSS - procurar normalize css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #444;
+}
+
+section {
+  padding: 3rem 0 4rem 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto; /*ou só AUTO*/
+  padding: 0 1rem;
+}
+
+.intro > .container {
+  width: 60%;
+  margin: auto;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  padding: 2rem;
+}
+
+.logo > img {
+  width: 200px;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 180px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.sign-in > form > .button {
+  border: none;
+}
+
+/*INTRO*/
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+
+.intro p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.intro,
+.team {
+  background-color: #f7f7f7;
+}
+
+.intro .cta {
+  margin: 2rem 0;
+}
+.button {
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-right: 5px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* .btn {
+  border-style: solid;
+  border-width: 3px;
+} */
+
+.button:hover {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.primary {
+  background-color: #3788bf;
+  color: white;
+}
+
+.secondary {
+  background-color: #fff;
+  color: #444;
+}
+
+/*LINGUAGENS*/
+h1.title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex; /* quadrados coloridos*/
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex; /*texto dentro dos quadrados*/
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  height: 150px;
+  width: 18%; /*IMPORTANTE - se fosse 20%, ficariam grudados (100% dividido por 5 itens); para haver espaço entre os quadrados, cada um deve ocupar < 20% */
+  border-radius: 10px;
+
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.ruby {
+  background-color: #ec454e;
+}
+
+.javascript {
+  background-color: #3788bf;
+}
+
+.elixir {
+  background-color: #9e69d5;
+}
+
+.python {
+  background-color: #f4a823;
+}
+
+.go {
+  background-color: #3cbfa1;
+}
+
+/*TEAM*/
+
+.team {
+  display: flex;
+  /*flex-direction: row;
+  flex-wrap: nowrap;*/
+  justify-content: space-between;
+}
+
+.team > .container > img {
+  width: 120px; /*para imagens, nem sempre % é ideal, segundo o professor*/
+  height: 120px;
+  border-radius: 50%; /*a partir de 50%, sempre fica perfeitamente arredondado*/
+}
+
+/*FOOTER*/
+footer {
+  background-color: #3788bf;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  padding-top: 3rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer p {
+  padding: 3rem 0;
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+}

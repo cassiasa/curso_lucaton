@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- massa\css\style.css -->
+  <title>MASSA</title>
+</head>
+
+
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="logo"><!-- O professor utiliza no LOGO uma imagem .png enorme em tamanho (e portanto, mais pesada) justificando que é para não perder resolução em determinados dispositivos. Nesse caso, o ideal então seria usar um .svg-->
+    </div>
+
+    <div class="sign-in">
+      <form action="#">
+        <input type="email" placeholder="E-mail" />
+        <input type="password" placeholder="Senha" />
+        <button type="submit" class="button primary">Entrar</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="container">
+        <h1>
+          Ajudamos <span class="bold">programadores</span> a conseguirem seu <span class="bold">primeiro emprego</span>.
+        </h1>
+
+        <p>Mais de 100 mil desenvolvedores já conseguiram o seu primeiro emprego usando nossa plataforma</p>
+
+        <div class="cta">
+          <a href="#" class="button primary">Sou programador</a>
+          <a href="#" class="button secondary">Sou empresa contratando</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="languages">
+      <div class="container">
+        <h1 class="title">Linguagens</h1>
+        <div class="cards">
+          <div class="card ruby">Ruby</div>
+          <div class="card javascript">Javascript</div>
+          <div class="card elixir">Elixir</div>
+          <div class="card python">Python</div>
+          <div class="card go">Go</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <h1 class="title">Nosso time</h1>
+        <img src="images/team/walter.jpg" alt="walter" /> <!-- class="members" Foi desnecessário utilizar essa classe, no css funcionou .TEAM > .CONTAINER > IMG -->
+        <img src="images/team/jesse.jpg" alt="jesse" />
+        <img src="images/team/skyler.jpg" alt="skyler" />
+        <img src="images/team/hank.jpg" alt="hank" />
+        <img src="images/team/gus.jpg" alt="gus" />
+        <img src="images/team/mike.jpg" alt="mike" />
+        <img src="images/team/saul.jpg" alt="saul" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="#">Política de privacidade</a></li>
+        <li><a href="#">Carreira</a></li>
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+
+      <p>feito por <span class="bold">Cássia</span>
+        <br>
+        curso Desenvolvimento Web (lucas caton)
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
